@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Side by side divs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+
+        #leftdiv{
+            background: linear-gradient(
+                53deg,
+                #ccfffc,
+                #ffcccf
+            );
+            border-radius: 10px;
+            width: 40%;
+            height: 3em;
+            display: inline-block;
+            border: 1px solid silver;
+            /* margin: 10px auto; */
+        }
+        #rightdiv{
+            background: linear-gradient(
+                53deg,
+                #ffcccf,
+                #ccfffc
+            );
+            border-radius: 10px;
+            width: 40%;
+            height: 3em;
+            display: inline-block;
+            border: 1px solid silver;
+            text-align: right;
+            /* margin: 10px auto; */
+        }
+        p{
+            margin-top: 1em;
+        }
+        body{background: linear-gradient(53deg,#000000, #230124);
+        }
+    </style>
+</head>
+<body style="margin: auto;">
+    <div id="leftdiv"> 
+        <p>This is the left div.</p>
+    </div>
+    <div id="rightdiv">  
+        <p>This is the right div.</p>
+    </div>
+    <div>
+        <p>This div should not be side-by-side</p>
+    </div>
+</body>
+</html>
